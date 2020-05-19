@@ -54,7 +54,7 @@ Replace <YOUR_BOT_ACCESS_TOKEN> with your bot access token provided from @BotFat
 
 Replace https://telegram.me/<GROUP_NAME> with your group link.
 
-Replace <BOT_NAME> with your bot's username.
+Replace <BOT_NAME> with your bot's @Username.
 
 Replace <PASSWORD> with a password for editing.
 

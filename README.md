@@ -3,9 +3,9 @@ A Telegram Bot to track public group referrals with a built in point system.
 
 ABOUT:
 
-This is a Telegram Chatbot for a referral program to a group chat. It has a built in point system that also awards extra points to the referrer when referrees are active in the group chat. Members can generate a link to the ReferralBot which contains the member's unique referral code. When a new user clicks the link to join a chat with the bot, the referral is logged and a user is sent a message and link to join the official group. Once the user joins the group, the referring member is awarded the point.
+This is a Telegram Bot for a referral program to a group chat. It has a built in point system that also awards extra points to the referrer when referrees are active in the group chat. Members can generate a link to the ReferralBot which contains the member's unique referral code. When a new user clicks the link to join a chat with the bot, the referral is logged and a user is sent a message and link to join the official group. Once the user joins the group, the referring member is awarded the point.
 
-This bot is created for there to only be one group to watch for new members. If you need to refer users to multiple groups, you will need multiple instances of this bot.
+This bot was created to watch for new members in only one group chat. If you need to refer users to multiple groups, you will need multiple instances of this bot.
 
 Important! Admin password is not stored encrypted in this base design. For a permanent solution, reconfigure for secure storage method.
 

@@ -29,27 +29,22 @@ Setup any user visible bot commands:
 
 Ubuntu 18.04 VPS install:
 
-wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 
-sudo dpkg -i packages-microsoft-prod.deb
-
-sudo add-apt-repository universe
-
-sudo apt-get update
-
-sudo apt-get install apt-transport-https
-
-sudo apt-get update
-
-sudo apt-get install dotnet-sdk-2.1
+	wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+	sudo dpkg -i packages-microsoft-prod.deb
+	sudo add-apt-repository universe
+	sudo apt-get update
+	sudo apt-get install apt-transport-https
+	sudo apt-get update
+	sudo apt-get install dotnet-sdk-2.1
 
 Clone repository: 
 
-git clone https://github.com/AaronPemberton/Telegram-Referral-Bot.git
+	git clone https://github.com/AaronPemberton/Telegram-Referral-Bot.git
 
 Edit the config file located at ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf:
 
-sudo nano ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf
+	sudo nano ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf
 
 In config.conf:
 

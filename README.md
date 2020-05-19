@@ -56,7 +56,7 @@ Replace https://telegram.me/<GROUP_NAME> with your group link.
 
 Replace <BOT_NAME> with your bot's @Username.
 
-Replace <PASS WORD> with a password for editing.
+Replace < PASSWORD > with a password for editing.
 
 Replace <START_DATE> with the date the referral campaign will begin. Month/Day/Year for example 5/21/2020.
 

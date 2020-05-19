@@ -113,6 +113,7 @@ BOT COMMANDS:
 		
 
 ADDITIONAL INFORMATION:
+
 This bot is design to only track one public group at a time. You will need to create seperate instances of this bot to link more than one group.
 
 Log files are saved to a Log folder inside of the Output folder.

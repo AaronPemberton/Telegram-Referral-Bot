@@ -129,12 +129,12 @@ This bot is design to only track one public group at a time. You will need to cr
 
 Log files are saved to a Log folder inside of the Output folder.
 
-Data files are saved to the Log folder. Data files are created once an hour of each day and contains a data dump from all databases. This is to help in reconstructing the databases if needed.
+Data files are saved to the Log folder. Data files are created once an hour of each day and contain a data dump from all databases. This is to help in reconstructing the databases if needed.
 
 The offset feature, set by /editUser wizard, can be used to adjust a member's point total, if required. It can also be used to award bonus points for completing additional tasks, if desired. Set this value to -1000000 to ban the user from the referral campaign. This can also be achieved by Option 5 - Ban user in the /editUser wizard.
 
 Failed logins, accessed in the /editUser wizard, is the number of attempts the user tried password protected commands with an incorrect password. After 10 failed attempts, the user is banned from commands that require a password until their Failed logins value is set to 0 by another admin with the password.
 
-When a new member joins the group, if they joined with a referral code, the bot will respond in the group with a welcome message. This serves as a convienent way of seeing who was referred by whom and when new referrals join. This feature can be disabled by any group admin with the command /disableWelcome in the group. Or enabled by any group admin with /enableWelcome in the group.
+When a new member joins the group, if they joined with a referral code, the bot will respond in the group with a welcome message. This serves as a convienent way of seeing who was referred by whom and when new referrals join. This feature can be disabled by any group admin with the command /disableWelcome in the group. Or enabled by any group admin with /enableWelcome in the group. The bot will also send the referring member a private message notifying them that a new member joined with their referral code. This message can be disabled with the command /disableNotice and enabled with the command /enableNotice in a private chat with the bot. 
 
 Some commands require a user ID number of the member, such as the /editUser wizard. A user's ID number can be obtain two ways with this bot. 1) Have the user send the /myID command. 2) If the user has interacted with the bot, the bot maintains a log of users. Send the /FindMemberId <USER_NAME> command in a private chat with the bot, replacing <USER_NAME> with the nickname or @username of the member you need the ID number for. If any matches are found in the database, the bot will respond with info on each potential match for you to verify which user is the correct one.

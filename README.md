@@ -16,11 +16,14 @@ Enter a private chat with @BotFather and send the command /newbot
 
 Follow the prompts to create a new bot.
 
-Once the bot is created, set the bot to allow groups and to turn off group privacy.
+Once the bot is created, set the bot to allow groups and to turn off group privacy:
+
 	@BotFather /mybots > Bot Settings > Allow Groups? > Turn groups on
+	
 	@BotFather /mybots > Bot Settings > Group Privacy > Turn off
 
-Setup any user visible bot commands.
+Setup any user visible bot commands:
+
 	@BotFather /mybots > Edit Bot > Edit Commands > command - description
 
 
@@ -51,16 +54,22 @@ sudo nano ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf
 In config.conf:
 
 Replace < YOUR_BOT_ACCESS_TOKEN > with your bot access token provided from @BotFather.
+For example: bot=1225611394:AAGJM-neC1bIHrqdUg26cq4F-hFWu3HyiGt
 
 Replace https://telegram.me/< GROUP_NAME > with your group link.
+For example: linkGroup=https://telegram.me/MyGroupChat
 
 Replace < BOT_NAME > with your bot's @Username.
+For example: linkBot=https://telegram.me/ReferralBot
 
 Replace < PASSWORD > with a password for editing.
+For example: pw=123456
 
-Replace < START_DATE > with the date the referral campaign will begin. Month/Day/Year for example 5/21/2020.
+Replace < START_DATE > with the date the referral campaign will begin. Month/Day/Year.
+For example start date of May 21st, 2020: start=5/21/2020
 
 Replace < NUMBER_OF_DAYS > with the integer number of days the referral campaign is to last.
+For example: days=14
 
 Points are obtained by referring new members and group chat activity of those new members.
 Every post by the referred user above < THRESHOLD > gives the reffering user 1 point, up to < MAXIMUM > per day.
@@ -75,8 +84,10 @@ He would get an additional 3 points today from Jane, 5 from Ginger (the max due 
 Giving him 8 points for today's user activity and 3 for referals for a total of 11 points.
 
 Replace < MAXIMUM > with an integer number for max points per day.
+For example: max=5
 
 Replace < THRESHOLD > with the number of characters required in the message in order to be awarded a point.
+For example: threshold=15
 
 Start the bot:
 
@@ -86,6 +97,7 @@ For example: dotnet Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/Tele
 If sucessfully started, bot will respond in the console with its user ID and name.
 
 Add bot to group with the following link (replace < BOT_USER_NAME > with the bot user name): https://telegram.me/< BOT_USER_NAME >?startgroup=added2group
+For example: https://telegram.me/ReferralBot?startgroup=added2group
 
 If sucessfully added and started, bot will respond with a greeting.
 

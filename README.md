@@ -40,12 +40,16 @@ sudo apt-get update
 
 sudo apt-get install dotnet-sdk-2.1
 
-Clone repository: git clone https://github.com/AaronPemberton/Telegram-Referral-Bot.git
+Clone repository: 
+
+git clone https://github.com/AaronPemberton/Telegram-Referral-Bot.git
 
 Edit the config file located at ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf:
+
 sudo nano ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf
 
 In config.conf:
+
 Replace <YOUR_BOT_ACCESS_TOKEN> with your bot access token provided from @BotFather.
 
 Replace https://telegram.me/<GROUP_NAME> with your group link.
@@ -75,6 +79,7 @@ Replace <MAXIMUM> with an integer number for max points per day.
 Replace <THRESHOLD> with the number of characters required in the message in order to be awarded a point.
 
 Start the bot:
+
 Start the bot on the VPS with the command: dotnet <path/to/bot.dll>
 For example: dotnet Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/TelegramReferralBot.dll
 

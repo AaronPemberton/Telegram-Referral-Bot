@@ -50,42 +50,42 @@ sudo nano ~/Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/config.conf
 
 In config.conf:
 
-Replace <YOUR_BOT_ACCESS_TOKEN> with your bot access token provided from @BotFather.
+Replace < YOUR_BOT_ACCESS_TOKEN > with your bot access token provided from @BotFather.
 
-Replace https://telegram.me/<GROUP_NAME> with your group link.
+Replace https://telegram.me/< GROUP_NAME > with your group link.
 
-Replace <BOT_NAME> with your bot's @Username.
+Replace < BOT_NAME > with your bot's @Username.
 
 Replace < PASSWORD > with a password for editing.
 
-Replace <START_DATE> with the date the referral campaign will begin. Month/Day/Year for example 5/21/2020.
+Replace < START_DATE > with the date the referral campaign will begin. Month/Day/Year for example 5/21/2020.
 
-Replace <NUMBER_OF_DAYS> with the integer number of days the referral campaign is to last.
+Replace < NUMBER_OF_DAYS > with the integer number of days the referral campaign is to last.
 
 Points are obtained by referring new members and group chat activity of those new members.
-Every post by the referred user above <THRESHOLD> gives the reffering user 1 point, up to <MAXIMUM> per day.
-In order for a message to be accepted for a point reward, the message text length must be longer than <THRESHOLD>.
+Every post by the referred user above < THRESHOLD > gives the reffering user 1 point, up to < MAXIMUM > per day.
+In order for a message to be accepted for a point reward, the message text length must be longer than < THRESHOLD >.
 This prevents some spam, nuisance posts, and unengaging posts such as a simpele "Hi guys!" from being counted.
-This can also be set to 0 to disable the points from user posts feature. The <MAXIMUM> applies for each referred user.
+This can also be set to 0 to disable the points from user posts feature. The < MAXIMUM > applies for each referred user.
 	
-For example: Bob referred Jane, Ginger and Katie. <MAXIMUM> is set to 5.
-Jane sent 3 messages in the group chat today that exceeded <THRESHOLD>. Ginger sent 15 and Katie sent none.
+For example: Bob referred Jane, Ginger and Katie. < MAXIMUM > is set to 5.
+Jane sent 3 messages in the group chat today that exceeded < THRESHOLD >. Ginger sent 15 and Katie sent none.
 Bob would have 1 point for each when they joined the group with his referral code.
-He would get an additional 3 points today from Jane, 5 from Ginger (the max due to <MAXIMUM>), and 0 from Katie.
+He would get an additional 3 points today from Jane, 5 from Ginger (the max due to < MAXIMUM >), and 0 from Katie.
 Giving him 8 points for today's user activity and 3 for referals for a total of 11 points.
 
-Replace <MAXIMUM> with an integer number for max points per day.
+Replace < MAXIMUM > with an integer number for max points per day.
 
-Replace <THRESHOLD> with the number of characters required in the message in order to be awarded a point.
+Replace < THRESHOLD > with the number of characters required in the message in order to be awarded a point.
 
 Start the bot:
 
-Start the bot on the VPS with the command: dotnet <path/to/bot.dll>
+Start the bot on the VPS with the command: dotnet < path/to/bot.dll >
 For example: dotnet Telegram-Referral-Bot/TelegramReferralBot/netcoreapp2.1/TelegramReferralBot.dll
 
 If sucessfully started, bot will respond in the console with its user ID and name.
 
-Add bot to group with the following link (replace <BOT_USER_NAME> with the bot user name): https://telegram.me/<BOT_USER_NAME>?startgroup=added2group
+Add bot to group with the following link (replace < BOT_USER_NAME > with the bot user name): https://telegram.me/< BOT_USER_NAME >?startgroup=added2group
 
 If sucessfully added and started, bot will respond with a greeting.
 
@@ -137,4 +137,4 @@ Failed logins, accessed in the /editUser wizard, is the number of attempts the u
 
 When a new member joins the group, if they joined with a referral code, the bot will respond in the group with a welcome message. This serves as a convienent way of seeing who was referred by whom and when new referrals join. This feature can be disabled by any group admin with the command /disableWelcome in the group. Or enabled by any group admin with /enableWelcome in the group. The bot will also send the referring member a private message notifying them that a new member joined with their referral code. This message can be disabled with the command /disableNotice and enabled with the command /enableNotice in a private chat with the bot. 
 
-Some commands require a user ID number of the member, such as the /editUser wizard. A user's ID number can be obtain two ways with this bot. 1) Have the user send the /myID command. 2) If the user has interacted with the bot, the bot maintains a log of users. Send the /FindMemberId <USER_NAME> command in a private chat with the bot, replacing <USER_NAME> with the nickname or @username of the member you need the ID number for. If any matches are found in the database, the bot will respond with info on each potential match for you to verify which user is the correct one.
+Some commands require a user ID number of the member, such as the /editUser wizard. A user's ID number can be obtain two ways with this bot. 1) Have the user send the /myID command. 2) If the user has interacted with the bot, the bot maintains a log of users. Send the /FindMemberId < USER_NAME > command in a private chat with the bot, replacing < USER_NAME > with the nickname or @username of the member you need the ID number for. If any matches are found in the database, the bot will respond with info on each potential match for you to verify which user is the correct one.

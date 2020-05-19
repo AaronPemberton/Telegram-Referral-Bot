@@ -21,7 +21,7 @@ Once the bot is created, set the bot to allow groups and to turn off group priva
 	@BotFather /mybots > Bot Settings > Group Privacy > Turn off
 
 Setup any user visible bot commands.
-	@BotFather /mybots > Edit Bot > Edit Commands > <command> - <description>
+	@BotFather /mybots > Edit Bot > Edit Commands > command - description
 
 
 Ubuntu 18.04 VPS install:

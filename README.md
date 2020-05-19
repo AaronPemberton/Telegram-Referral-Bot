@@ -25,6 +25,7 @@ Setup any user visible bot commands.
 
 
 Ubuntu 18.04 VPS install:
+
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 
